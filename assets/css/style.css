@@ -1,0 +1,34 @@
+body{
+    background-image: url("../images/regal.png");
+}
+#jumbo{
+    background-image: url("../images/train.jpg");
+    background-size: cover;
+    background-position: 0px -165px;
+}
+#jumboText{
+    color:whitesmoke;
+    font-weight: bold;
+}
+h4{
+    color: white;
+    background-color: darkslateblue;
+    margin-bottom: 0px;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#current-trains{
+    border: solid 1px darkslateblue;
+    padding: 10px;
+}
+#add-train{
+    border: solid 1px darkslateblue;
+    padding: 10px;
+}
+#col-name .lead{
+    font-weight: bold;
+}
+#add-train, #current-trains{
+    background-color: whitesmoke;
+}

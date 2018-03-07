@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">    
+                <div id ="jumbo" class="jumbotron jumbotron-fluid">
+                            <div id="jumboText" class="container">
+                                <h1 class="display-4">Train Schedule App</h1>
+                                <p class="lead">A return to the gentlemanly form of travel</p>
+                                <p id="current-time"></p>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <h4>Current Train Schedule</h4>
+                        <div id="current-trains">
+                            <table class="table" id="trainTime-table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col" id = "col-name">Train Name</th>
+                                                <th scope="col" id = "col-name">Destination</th>
+                                                <th scope="col" id = "col-name">Frequency (min)</th>
+                                                <th scope="col" id = "col-name">Next Arrival</th>
+                                                <th scope="col" id = "col-name">Minutes Away</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            </tbody>
+                                </table>
+                            </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Add Train</h4>
+                        <div id="add-train">
+                            <label for="name">Train Name</label>
+                            <input id="name" class="form-control" type="text" placeholder="ex. Casey Jr.">
+                            <br>
+                            
+                            <label for="destination">Destination</label>
+                            <input id="destination" class="form-control" type="text" placeholder="ex. Kookamunga">
+                            <br>
+                            
+                            <label for="time" >First Train Time (HH:mm - military time)</label>
+                            <input id="time" class="form-control" type="text" placeholder="ex. 12:00">
+                            <br>
+                            
+                            <label for="frequency" >Frequency (min)</label>
+                            <input id="frequency" class="form-control" type="number" placeholder="ex. 10">
+                            <br>
+                            
+                            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+
+                        </div>
+                        
+                        
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
