@@ -65,9 +65,9 @@ var config = {
         var nextArrival = moment().add(trainAway, "minutes");
         console.log("Next Arrival: " + moment(nextArrival).format("hh:mm"));
         
-        var militaryTrain = moment(nextArrival).format("HH:mm")
+        var timeConvert = moment(nextArrival).format("hh:mm a")
         
-        $("#trainTime-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + militaryTrain + "</td><td>" + trainAway + "</td><tr>")
+        $("#trainTime-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + timeConvert + "</td><td>" + trainAway + "</td><tr>")
         
       })
       
